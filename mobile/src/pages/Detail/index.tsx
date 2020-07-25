@@ -55,7 +55,7 @@ const Detail = () => {
   }
 
   function composeWpp(){
-    Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de reíduos.`)
+    Linking.openURL(`whatsapp://send?phone=${data.point.whatsapp}&text=Tenho interesse sobre coleta de resíduos.`)
   }
 
   return(
@@ -77,7 +77,7 @@ const Detail = () => {
         </View>
       </View>
       <View style={styles.footer}>
-        <RectButton style={styles.button} onPress={()=> {}}>
+        <RectButton style={styles.button} onPress={composeWpp}>
           <FontAwesome name="whatsapp" size={20} color="#FFF"/>
           <Text style={styles.buttonText}>WhatsApp</Text>
         </RectButton>
