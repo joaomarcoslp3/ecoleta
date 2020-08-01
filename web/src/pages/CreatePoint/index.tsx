@@ -116,6 +116,7 @@ const CreatePoint = () => {
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
+   console.log(selectedFile);
     
     const {name, email, whatsapp} = formData;
     const uf = selectedUf;
